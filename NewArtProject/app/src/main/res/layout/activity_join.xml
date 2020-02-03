@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkGrayBackground"
+    tools:context=".Activities.JoinActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="80dp"
+        app:srcCompat="@drawable/icon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/joinEmailEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:autoSizeTextType="uniform"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:text="Password" />
+        <EditText
+            android:id="@+id/joinPwEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:text="Password Check" />
+        <EditText
+            android:id="@+id/joinCheckPwEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/JoinButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="40dp"
+        android:background="@drawable/round_shape"
+        android:textColor="@color/white"
+        android:text="Join" />
+
+</LinearLayout>

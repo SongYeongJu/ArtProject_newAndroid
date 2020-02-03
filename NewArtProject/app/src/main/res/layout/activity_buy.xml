@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginVertical="50dp"
+    android:layout_margin="20dp"
+    tools:context=".Activities.BuyActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="결제하기" />
+
+    <ImageView
+        android:id="@+id/buyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        app:srcCompat="@drawable/ba1" />
+
+    <TextView
+        android:id="@+id/buyNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|left"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="화가 [작품명명명]" />
+    <TextView
+        android:id="@+id/buyCostTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|left"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:text="30,000,000원" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="카드 결제"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/round_shape_full_dark_gray"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_shape_full_dark_gray"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="3dp"
+            android:text="무통장 입금하기" />
+
+    </LinearLayout>
+
+</LinearLayout>
